@@ -5,23 +5,23 @@
 	$response = array();
 
 	if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-		if (isset($_POST['']) and isset($_POST[''])) {
+		if (isset($_POST['email']) and isset($_POST['senha'])) {
 			$db = new DbOperations();
 		 	
-		 	if ($db->userLogin($_POST[''], $_POST[''])) {
-		 		$email = $db->getUserByEmail($_POST['']);
+		 	if ($db->userLogin($_POST['email'], $_POST['senha'])) {
+		 		$email = $db->getUserByEmail($_POST['email']);
 
 		 		$response['error'] = false;
 
-		 		$response[''] = $email[''];
-
+		 		$response['nome'] = $email['nome'];
+                $response['email'] = $email['email'];
 		 	} else {
 		 		$response['error'] = true;
-				$response['message'] = "Email ou CPF invalidos";
+				$response['message'] = "Email ou Senha inválidos";
 		 	}
 		} else {
 			$response['error'] = true;
-			$response['message'] = "Os campos obrigatorios estao em branco";
+			$response['message'] = "Os campos obrigatórios estão em branco";
 		}
 		
 	}
@@ -41,3 +41,14 @@
 	echo json_encode(utf8ize($response), JSON_PRETTY_PRINT);
 
 ?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Technology S/A</title>
+    <link rel="icon" href="_images/favicon.ico">
+</head>
+<body>
+
+</body>
+</html>

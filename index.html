@@ -156,13 +156,15 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form class="form-signin">
+                    <form class="form-signin" method="post" action="_v1/userLogin.php">
                         <label for="inputEmail" class="sr-only">Email</label>
                         <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+                        <br>
                         <label for="inputPassword" class="sr-only">Password</label>
                         <input type="password" name="senha" id="inputPassword" class="form-control" placeholder="Password" required>
                         <div class="checkbox mb-3">
                             <label>
+                                <br>
                                 <input type="checkbox" value="remember-me"> Remember me
                             </label>
                         </div>

@@ -5,11 +5,11 @@
 	$response = array();
 
 	if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-		if (isset($_POST['']) and isset($_POST['']) and isset($_POST[''])) {
+		if (isset($_POST['nome']) and isset($_POST['email']) and isset($_POST['senha'])) {
 			
 			$db = new DbOperations();
 
-			$result = $db->createUser($_POST[''], $_POST[''], $_POST['']);
+			$result = $db->createUser($_POST['nome'], $_POST['email'], $_POST['senha']);
 
 			if ($result == 1) {
 				$response['error'] = false;
@@ -33,3 +33,14 @@
 
 	echo json_encode($response, JSON_PRETTY_PRINT);
 ?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Technology S/A</title>
+    <link rel="icon" href="_images/favicon.ico">
+</head>
+<body>
+
+</body>
+</html>
