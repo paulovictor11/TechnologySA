@@ -1,6 +1,6 @@
 <?php
 
-	require_once '../includes/DbOperations.php';
+	require_once '../_includes/DbOperations.php';
 
 	$response = array();
 
@@ -12,7 +12,6 @@
 		 		$email = $db->getUserByEmail($_POST['email']);
 
 		 		$response['error'] = false;
-
 		 		$response['nome'] = $email['nome'];
                 $response['email'] = $email['email'];
 		 	} else {
