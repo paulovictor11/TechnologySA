@@ -12,8 +12,8 @@
 
 	<!-- NavBar -->
 
-	<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
-  		<a class="navbar-brand" href="#">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  		<a class="navbar-brand" href="index.html">
   			<img class="logotipo" src="_images/logo.jpg">
   		</a>
   		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,14 +23,20 @@
   		<div class="collapse navbar-collapse" id="navbarSupportedContent">
     		<ul class="navbar-nav mr-auto">
       			<li class="nav-item active">
-        			<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        			<a class="nav-link" href="#institucional">Quem Somos <span class="sr-only">(current)</span></a>
       			</li>
       			<li class="nav-item">
-        			<a class="nav-link" href="#">Link</a>
+        			<a class="nav-link" href="#servicos">Serviços</a>
       			</li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#formulario">Contato</a>
+                </li>
       			<li class="nav-item dropdown">
         			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          			Dropdown
+          			Outros
         			</a>
         			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
           				<a class="dropdown-item" href="#">Action</a>
@@ -39,11 +45,11 @@
           				<a class="dropdown-item" href="#">Something else here</a>
         			</div>
       			</li>
-      			<li class="nav-item">
-        			<a class="nav-link disabled" href="login.html">Disabled</a>
-      			</li>
+      			<!--<li class="nav-item">-->
+        			<!--<a class="nav-link disabled">Disabled</a>-->
+      			<!--</li>-->
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="modal" data-target="#exampleModal">Sign In</a>
+                    <a class="nav-link" href="login.html">Sign In</a>
                 </li>
     		</ul>
     		<form class="form-inline my-2 my-lg-0">
@@ -106,7 +112,6 @@
         <div class="titulo">
             <h2><strong>Serviços</strong></h2>
             <h3>Conheça-os !!!</h3>
-            <hr>
         </div>
         <div class="container">
             <div class="row">
@@ -114,21 +119,93 @@
                     <i class="fab fa-android fa-4x"></i>
                     <h3>Android</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quaerat nihil, iusto voluptatum, dolores consequatur, consequuntur ab doloribus nesciunt iste iure rerum eveniet! Ut nulla, iste! Nesciunt itaque, fugit debitis.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                    <p><a class="btn btn-success" href="#" role="button" data-toggle="modal" data-target="#exampleModal">Veja Detalhes &raquo;</a></p>
                 </div>
                 <div class="col dir">
                     <i class="fab fa-apple fa-4x"></i>
                     <h3>Apple</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut natus voluptatibus a quo eligendi sapiente earum, ipsa ducimus iste eaque saepe non, illo, nemo reprehenderit similique itaque animi obcaecati, aliquam.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                    <p><a class="btn btn-success" href="#" role="button" data-toggle="modal" data-target="#exampleModal">Veja Detalhes &raquo;</a></p>
                 </div>
                 <div class="col">
                     <i class="fab fa-windows fa-4x"></i>
                     <h3>Windows</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam adipisci eius, sed mollitia at repudiandae delectus, laboriosam dolore quaerat assumenda error placeat necessitatibus temporibus deleniti vitae quidem porro minima pariatur.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                    <p><a class="btn btn-success" href="#" role="button" data-toggle="modal" data-target="#exampleModal">Veja Detalhes &raquo;</a></p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+
+    <section id="blog">
+        <div class="nomeBlog">
+            <h2>Blog</h2>
+            <h3>Notícias do momento</h3>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col dir">
+                    <img src="_images/blog07.png" alt="">
+                    <h3>Twitter registra lucro pelo segundo trimestre seguido</h3>
+                    <h4>YouTube exclui 5 milhões de vídeos por violação de conteúdo</h4>
+                    <a class="btn btn-primary" href="#" role="button" data-toggle="modal" data-target="#exampleModal">Leia Mais &raquo;</a>
+                </div>
+                <div class="col dir">
+                    <img src="_images/blog08.jpg" alt="">
+                    <h3>WhatsApp aumenta para 16 anos a idade mínima para uso na UE</h3>
+                    <h4>Até então, os usuários deveriam ter 13 anos para acessar o aplicativo em todo o mundo</h4>
+                    <a class="btn btn-primary" href="#" role="button" data-toggle="modal" data-target="#exampleModal">Leia Mais &raquo;</a>
+                </div>
+                <div class="col">
+                    <img src="_images/blog09.png" alt="">
+                    <h3>YouTube exclui 5 milhões de vídeos por violação de conteúdo</h3>
+                    <h4>Plataforma de vídeos ainda precisa de equipe interna de humanos para verificar descobertas automatizadas de mais 1,6 milhão de vídeos que foram removidos</h4>
+                    <a class="btn btn-primary" href="#" role="button" data-toggle="modal" data-target="#exampleModal">Leia Mais &raquo;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+
+    <section id="formulario">
+        <div class="contato">
+            <h2>Contato</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col dir">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp" placeholder="Nome">
+                            <br>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                            <br>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Mensagem"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="col">
+                    <div class="informacoes">
+                        <i class="fas fa-phone"></i>
+                        &nbsp;
+                        (83) 9999-9999
+                        <br>
+                        <i class="far fa-envelope"></i>
+                        &nbsp;
+                        contato@technology.com
+                        <br>
+                        <i class="fas fa-road"></i>
+                        &nbsp;
+                        Avenida Aquela Lá, 333 - NeverLand
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="enviar">
+            <a class="btn btn-danger" href="#" role="button">Enviar</a>
         </div>
     </section>
 
@@ -150,29 +227,18 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Titulo</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form class="form-signin" method="post" action="_v1/userLogin.php">
-                        <label for="inputEmail" class="sr-only">Email</label>
-                        <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
-                        <br>
-                        <label for="inputPassword" class="sr-only">Password</label>
-                        <input type="password" name="senha" id="inputPassword" class="form-control" placeholder="Password" required>
-                        <div class="checkbox mb-3">
-                            <label>
-                                <br>
-                                <input type="checkbox" value="remember-me"> Remember me
-                            </label>
-                        </div>
-                    </form>
+                    Corpo
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary">Access</button>
+                    <!--<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>-->
+                    <!--<button type="button" class="btn btn-primary">Access</button>-->
+                    Rodape
                 </div>
             </div>
         </div>

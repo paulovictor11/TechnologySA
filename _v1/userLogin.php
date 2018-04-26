@@ -12,8 +12,8 @@
 		 		$email = $db->getUserByEmail($_POST['email']);
 
 		 		$response['error'] = false;
-		 		$response['nome'] = $email['nome'];
-                $response['email'] = $email['email'];
+//		 		$response['nome'] = $email['nome'];
+//                $response['email'] = $email['email'];
 		 	} else {
 		 		$response['error'] = true;
 				$response['message'] = "Email ou Senha inválidos";

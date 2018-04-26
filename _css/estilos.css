@@ -2,10 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Gugi');
 
-body{
-	position: absolute;
-}
-
 .logotipo{
 	height: 50px;
 	width: 50px;
@@ -36,7 +32,7 @@ body{
 
 #institucional{
 	text-align: left;
-	padding: 60px 0;
+	padding: 40px 0;
 	background-color: #ecf0f1;
 }
 
@@ -50,7 +46,7 @@ body{
 
 #servicos{
 	text-align: center;
-	padding: 60px 0;
+	padding: 40px 0;
 	background-color: #2c3e50;
 }
 
@@ -58,3 +54,51 @@ body{
 	color: white;
 }
 
+#servicos h3 {
+    padding-bottom: 30px;
+}
+
+#blog {
+	text-align: center;
+	padding: 40px 0;
+	background-color: #008B8B;
+}
+
+#blog h4 {
+	color: white;
+	text-align: justify;
+	font-size: 15pt;
+	text-decoration: none;
+}
+
+#blog a {
+	margin-top: 20px;
+}
+
+#blog .container h3 {
+	margin-top: 20px;
+}
+
+.nomeBlog h3 {
+	padding-bottom: 30px;
+}
+
+#formulario {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #130f40;
+}
+
+.contato h2 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.informacoes {
+    color: white;
+    text-align: left;
+}
+
+.enviar {
+    margin-top: 20px;
+}
